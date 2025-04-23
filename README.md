@@ -1,1 +1,3 @@
 # manifiestos-0311at
+
+no hace falta que utilicemos ninguno de los dos entonces, borramos ingress y solo dejamos el deployment, volumenes y services, ahora vayamos con la documentacion del trabajo, quiero que de manera muy resumida hables sobre el primer intento con dockerfile, pero que lo rehicimos de mejoro manera montando el volumen al momento de crear el perfil, y comenta todo lo que hemos realizado ahora, pero sin incluir el ingress, asi todos estos problemas de carga no tendrian importancia, tambien quiero que me crees el readme para manifiestos

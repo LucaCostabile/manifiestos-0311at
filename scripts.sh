@@ -100,6 +100,14 @@ kubectl apply -f pvc.yaml
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
+titulo "Esperando a que el pod esté listo..."
+
+kubectl wait --for=condition=ready pod -l app=sitio-web --timeout=60s
+
+titulo "Sitio desplegado correctamente"
+echo "🌐 Dirección de acceso:"
+minikube service sitio-service --url -p 0311at
+
 # ------------ PASO 5: Mostrar acceso ------------
 
 titulo "Sitio desplegado correctamente"
